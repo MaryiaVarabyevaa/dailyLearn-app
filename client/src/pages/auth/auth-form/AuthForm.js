@@ -11,6 +11,8 @@ import { useForm, Controller, useFormState } from "react-hook-form";
 import {emailValidation, passwordValidation} from './validation';
 import {theme} from './authFormStyle';
 
+import { registration } from '../../../http/userAPI';
+
 export const AuthForm = () => {
   // handleSubmit ф-я, которая получает данные их формы, если проверка прошла успешно
   // объект control содержит методы для регистрации компонентов в React Hook Form.
@@ -20,7 +22,6 @@ export const AuthForm = () => {
       password: ''
     }
   });
-  console.log()
   const {errors} = useFormState({
     control
   });
