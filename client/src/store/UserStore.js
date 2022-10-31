@@ -1,27 +1,14 @@
-import {makeAutoObservable} from "mobx";
+import {createStore} from "redux";
 
-export default class UserStore {
-    constructor() {
-        this.isAuth = false;
-        this._user = {};
-        makeAutoObservable(this);
-    }
-    setUser(user) {
-        this._user = user; 
-    }
-    setIsAuth(bool) {
-        this._isAuth = bool;
-    }
-    get isAuth() {
-        return this._isAuth;
-    }
-    set isAuth(bool) {
-        this._isAuth = bool;
-    }
-    get user() {
-        return this._user;
-    }
-    set user(user) {
-        this._user = user; 
-    }
+const defaultState = {
+  isAuth: false,
 }
+const reducer = (state = defaultState, action) => {
+  switch (action.type) {
+    case 'ADD_USER':
+      return {...state, isAuth: true}
+    default:
+      return state;
+  }
+}
+export const userStore = createStore(reducer);

@@ -1,3 +1,2 @@
-export const LOGIN_ROUTE ='/login';
-export const REGISTRATION_ROUTE ='/registration';
-export const WORD_ROUTE = '/';
+export const LOGIN_ROUTE = '/login';
+export const CARD_ROUTE = '/card';

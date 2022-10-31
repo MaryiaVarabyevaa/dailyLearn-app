@@ -1,21 +1,22 @@
-import { LOGIN_ROUTE, REGISTRATION_ROUTE, WORD_ROUTE } from "./utils/consts";
-import { Auth } from "./pages/auth/Auth";
-import { Card } from "./pages/card/Card";
+import {LOGIN_ROUTE, CARD_ROUTE} from "./utils/consts";
+import {Card} from "./pages/card";
+import {Auth} from "./pages/auth";
+import {createBrowserRouter} from "react-router-dom";
 
-export const authRoutes = [
-    {
-        path: WORD_ROUTE,
-        Component: Card
-    }    
-];
+export const authRoutes = createBrowserRouter([
+  {
+    path: CARD_ROUTE,
+    element: <Card />,
+  },
+]);
 
-export const publicRoutes = [
-    {
-        path: LOGIN_ROUTE, 
-        Component: Auth
-    },
-    {
-        path: REGISTRATION_ROUTE,
-        Component: Auth
-    }
-]
+export const publicRoutes = createBrowserRouter([
+  {
+    path: LOGIN_ROUTE,
+    element: <Auth />,
+  },
+  {
+    path: CARD_ROUTE,
+    element: <Card />,
+  },
+]);
