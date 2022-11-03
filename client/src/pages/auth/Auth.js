@@ -1,30 +1,36 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {Link, useNavigate} from "react-router-dom";
 import {Avatar, Box, Button, Container, CssBaseline, Grid, TextField, ThemeProvider, Typography} from "@mui/material";
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import {theme} from "./authStyle";
 import {CARD_ROUTE} from "../../utils/consts";
-import {emailValidation, passwordValidation} from "./validation";
+import {useInput} from "./validation/useInput";
 
 export const Auth = () => {
   const [user, setUser] = useState(true);
-  const [emailError, setEmailError]  = useState(false);
+  const email = useInput('', {isEmpty: true, isEmail: true});
+  const password = useInput('', {isEmpty: true, minLength: 6});
+  const [emailError, setEmailError] = useState('');
   const [passwordError, setPasswordError] = useState('');
-  const [password, setPasswod] = useState('new password');
+
   const navigate = useNavigate();
+    // useEffect(() => {
+    //     console.log(emailError)
+    //     // console.log('isClicked: ' + email.isClicked);
+    //     // console.log('isEmpty: ' + email.isEmpty);
+    //     // console.log('isEmail: ' + email.isEmail);
+    //     if(email.isClicked && email.isEmpty) {
+    //         setEmailError('Required to fill in');
+    //     }
+    //     if(email.isClicked && email.isEmail) {
+    //         setEmailError('Enter the correct value');
+    //     }
+    //
+    // }, [email.value])
     const handleSubmit = (event) => {
         event.preventDefault()
-        const data = new FormData(event.currentTarget);
-        try {
-          const obj = emailValidation(data.get('email'));
-          console.log(obj)
-          // if(emailError.length !== 0 || passwordError.length !== 0) {
-          //   throw new Error('Ops, something wrong')
-          // } else {
-          //   navigate(CARD_ROUTE);
-          // }
-        } catch (e) {
-          alert(e)
+        if(!email.isEmpty && !email.isEmail && !password.minLengthError){
+            navigate(CARD_ROUTE);
         }
     }
     return (
@@ -56,9 +62,18 @@ export const Auth = () => {
                       label='Email address'
                       name="email"
                       autoComplete='email'
-                      error={emailError}
-                      helperText={emailError}
                       autoFocus
+                      value={email.value}
+                      onChange={e => email.onChange(e)}
+                      onBlur={() => email.onBlur()}
+                      error={
+                        (email.isClicked && email.isEmpty) || (email.isClicked && email.isEmail)
+
+                      }
+                      helperText={
+                        `${email.isClicked && email.isEmpty ? 'Required to fill in' : '' }` ||
+                      `${(email.isClicked && email.isEmail) ? 'Enter the correct value' : ''}`
+                    }
                     />
                     <TextField
                       margin="normal"
@@ -69,9 +84,15 @@ export const Auth = () => {
                       label='Password'
                       name="password"
                       autoComplete='password'
-                      error={passwordError}
-                      helperText={passwordError}
-                      autoFocus
+                      value={password.value}
+                      onChange={e => password.onChange(e)}
+                      onBlur={e => password.onBlur(e)}
+                      error={
+                          (password.isClicked && password.isEmpty) || (password.isClicked && password.minLengthError)
+                      }
+                      helperText={`${password.isClicked && password.isEmpty ? 'Required to fill in' : ''}` ||
+                          `${password.isClicked && password.minLengthError? 'Password must contain at least 6 characters' : ''}`}
+
                     />
                     <Button
                       type='submit'

@@ -1,9 +1,8 @@
 import React, {useState} from 'react'
 import {createTheme} from "@mui/material/styles";
 import {Box, Button, Container, CssBaseline, Grid, ThemeProvider, Typography} from "@mui/material";
-import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import {CardForm} from "./cardForm";
+import {Carousel} from "./carousel/Сarousel";
 
 const theme = createTheme();
 export const Card = () => {
@@ -22,41 +21,13 @@ export const Card = () => {
             gap: '20px'
           }}
         >
-          <Typography component='h1' variant='h2'>
+          <Typography
+              component='h1'
+              variant='h2'
+          >
             Train your words
           </Typography>
-          <Grid
-            container
-            spacing={4}
-            justifyContent="center"
-            alignItems="center"
-          >
-            <Grid item>
-              <ArrowBackIosNewIcon />
-            </Grid>
-            <Grid
-              item
-              xs={6} md={8}
-            >
-              <Typography
-                component='h3'
-                variant='h3'
-                sx={{
-                  textAlign:'center',
-                  paddingTop: 8,
-                  paddingBottom: 8,
-                  bgcolor: 'warning.light',
-                  borderRadius: '30px'
-                }}
-
-              >
-                Translated word
-              </Typography>
-            </Grid>
-            <Grid item>
-              <ArrowForwardIosIcon />
-            </Grid>
-          </Grid>
+            <Carousel />
           <Button
             onClick={() => setShowTranslate(!showTranslate)}
           >
