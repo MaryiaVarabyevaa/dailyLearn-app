@@ -3,34 +3,38 @@ import {Link, useNavigate} from "react-router-dom";
 import {Avatar, Box, Button, Container, CssBaseline, Grid, TextField, ThemeProvider, Typography} from "@mui/material";
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import {theme} from "./authStyle";
-import {CARD_ROUTE} from "../../utils/consts";
-import {useInput} from "./validation/useInput";
+import {CARD_ROUTE} from "../../constants/routes";
+import {useInput} from "../../hooks/useInput";
+import {useDispatch, useSelector} from "react-redux";
+import {login, registration} from "../../http/UserAPI";
+import {addUserAction} from "../../store/UserReducer";
+
+const REQUIRED_FIELD = 'Required to fill in';
 
 export const Auth = () => {
+  const isAuth =  useSelector(state => state.userReducer.isAuth);
+  const dispatch = useDispatch()
   const [user, setUser] = useState(true);
   const email = useInput('', {isEmpty: true, isEmail: true});
   const password = useInput('', {isEmpty: true, minLength: 6});
   const [emailError, setEmailError] = useState('');
   const [passwordError, setPasswordError] = useState('');
-
   const navigate = useNavigate();
-    // useEffect(() => {
-    //     console.log(emailError)
-    //     // console.log('isClicked: ' + email.isClicked);
-    //     // console.log('isEmpty: ' + email.isEmpty);
-    //     // console.log('isEmail: ' + email.isEmail);
-    //     if(email.isClicked && email.isEmpty) {
-    //         setEmailError('Required to fill in');
-    //     }
-    //     if(email.isClicked && email.isEmail) {
-    //         setEmailError('Enter the correct value');
-    //     }
-    //
-    // }, [email.value])
-    const handleSubmit = (event) => {
-        event.preventDefault()
-        if(!email.isEmpty && !email.isEmail && !password.minLengthError){
-            navigate(CARD_ROUTE);
+
+    const handleSubmit = async (event) => {
+        try {
+            let data;
+            if(!user) {
+                data = await registration(email.value, password.value);
+            } else {
+                data = await login(email.value, password.value);
+            }
+            if(!email.isEmpty && !email.isEmail && !password.minLengthError){
+                navigate(CARD_ROUTE);
+                dispatch(addUserAction(data));
+            }
+        } catch(err) {
+            alert(err.response.data.message)
         }
     }
     return (
@@ -71,9 +75,9 @@ export const Auth = () => {
 
                       }
                       helperText={
-                        `${email.isClicked && email.isEmpty ? 'Required to fill in' : '' }` ||
-                      `${(email.isClicked && email.isEmail) ? 'Enter the correct value' : ''}`
-                    }
+                        `${email.isClicked && email.isEmpty ? REQUIRED_FIELD : '' }` ||
+                          `${(email.isClicked && email.isEmail) ? 'Enter the correct value' : ''}`
+                      }
                     />
                     <TextField
                       margin="normal"
@@ -90,8 +94,9 @@ export const Auth = () => {
                       error={
                           (password.isClicked && password.isEmpty) || (password.isClicked && password.minLengthError)
                       }
-                      helperText={`${password.isClicked && password.isEmpty ? 'Required to fill in' : ''}` ||
-                          `${password.isClicked && password.minLengthError? 'Password must contain at least 6 characters' : ''}`}
+                      helperText={`${password.isClicked && password.isEmpty ? REQUIRED_FIELD : ''}` ||
+                          `${password.isClicked && password.minLengthError? 'Password must contain at least 6 characters' : ''}`
+                      }
 
                     />
                     <Button

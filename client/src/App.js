@@ -1,13 +1,14 @@
 import React from 'react';
-import {Auth} from './pages/auth';
-import {Card} from './pages/card'
 import {useSelector} from "react-redux";
+import {AppRouter} from './components/AppRouter';
+import {BrowserRouter, RouterProvider} from "react-router-dom";
 
 const App = () => {
-  const isAuth = useSelector(state => state.isAuth);
-  return <div>
-    <Auth />
-  </div>
+    return (
+        <BrowserRouter>
+            <AppRouter />
+        </BrowserRouter>
+    )
 }
 
 export default App;

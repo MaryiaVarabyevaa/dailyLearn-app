@@ -1,9 +1,34 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {theme} from "./cardFormStyle";
 import {Box, Button, Container, CssBaseline, TextField, ThemeProvider} from "@mui/material";
+import {useInput} from "../../../hooks/useInput";
+import {addWordAction} from "../../../store/CardReducer";
+import {useDispatch} from "react-redux";
+import {addWords} from "../../../http/CardAPI";
 
+const REQUIRED_FIELD = 'Required to fill in';
+const CORRECT_VALUE = 'This field should not contain numbers';
 
 export const CardForm = () => {
+    const dispatch = useDispatch();
+    const originalWord = useInput('', {isEmpty: true, hasNumber: true});
+    const translatedWord = useInput('',  {isEmpty: true, hasNumber: true});
+
+    const handleSubmit = async (e) => {
+        e.preventDefault()
+        try {
+            // let data;
+            //
+            // if(!originalWord.isEmpty && !translatedWord.isEmpty){
+            //     dispatch(addWordAction(data));
+            // }
+            // const res = await addWords(originalWord, translatedWord);
+            // console.log(res)
+        } catch (err) {
+            alert(err.response.data.message)
+        }
+    };
+
   return (
     <ThemeProvider theme={theme}>
       <Container maxWidth='xs'>
@@ -15,30 +40,57 @@ export const CardForm = () => {
             alignItems: 'center',
           }}
         >
-          <Box component='form' noValidate sx={{mt: 1}}>
+          <Box
+              component='form'
+              noValidate
+              sx={{mt: 1}}
+              onSubmit={handleSubmit}
+          >
             <TextField
               margin="normal"
               required
               fullWidth
-              id='foreign-word'
+              id='translated_word'
               label='Foreign word'
               name="foreignWord"
               autoFocus
+              value={translatedWord.value}
+              onChange={(e) => translatedWord.onChange(e)}
+              onBlur={() => translatedWord.onBlur()}
+              error={
+                  (translatedWord.isClicked && translatedWord.isEmpty) ||
+                  (translatedWord.isClicked && translatedWord.hasNumber)
+              }
+              helperText={
+                `${translatedWord.isClicked && translatedWord.isEmpty ? REQUIRED_FIELD : ''}` ||
+                  `${(translatedWord.isClicked && translatedWord.hasNumber) ? CORRECT_VALUE : ''}`
+              }
             />
             <TextField
               margin="normal"
               required
               fullWidth
-              id='original-word'
+              id='original_word'
               label='Original word'
               name="originalWord"
-              autoFocus
+              value={originalWord .value}
+              onChange={(e) => originalWord .onChange(e)}
+              onBlur={() => originalWord .onBlur()}
+              error={
+                (originalWord.isClicked && originalWord.isEmpty) ||
+                  (originalWord.isClicked && originalWord.hasNumber)
+              }
+              helperText={
+                `${originalWord.isClicked && originalWord.isEmpty ? REQUIRED_FIELD : ''}` ||
+                  `${(originalWord.isClicked && originalWord.hasNumber) ? CORRECT_VALUE : ''}`
+              }
             />
             <Button
               type='submit'
               fullWidth
               variant='contained'
               sx={{mt: 3, mb: 2}}
+              onClick={() => handleSubmit()}
             >
               Add a word
             </Button>

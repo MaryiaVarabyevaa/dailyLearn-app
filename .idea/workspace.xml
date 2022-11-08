@@ -2,25 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="335a3f35-4b2d-43ec-a971-f19b57459476" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/client/src/components/AppRouter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/http/CardAPI.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/http/UserAPI.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/http/service/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/store/CardReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/store/UserReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/store/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/routes/validation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/efde6a8e-5662-4990-b3f1-dfc115cea69c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/efde6a8e-5662-4990-b3f1-dfc115cea69c.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/efde6a8e-5662-4990-b3f1-dfc115cea69c/storage_v2/_src_/database/dailyLearn-app._4hn3Q/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/efde6a8e-5662-4990-b3f1-dfc115cea69c/storage_v2/_src_/database/dailyLearn-app._4hn3Q/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/auth/Auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/auth/Auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/auth/validation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/auth/validation/useInput.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/hooks/useInput.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/auth/validation/useValidation.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/hooks/useValidation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/card/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/card/Card.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/userController.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/wordController.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/db.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/error/ApiError.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/middleware/ErrorHandlingMiddleware.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/middleware/authMiddleware.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/models.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/userRouter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/wordRouter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/card/cardForm/CardForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/card/cardForm/CardForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/card/carousel/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/card/carousel/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/card/carousel/Сarousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/card/carousel/Сarousel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/routes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/store/UserStore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/utils/consts.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/constants/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/controllers/userController.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/userController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/cardRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/cardRoute.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/userRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/userRouter.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +60,9 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/varabyovamaryia/WebstormProjects/dailyLearn-app&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -58,6 +71,14 @@
     ]
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/src/hooks" />
+      <recent name="$PROJECT_DIR$/client/src/constants" />
+      <recent name="$PROJECT_DIR$/client/src/http" />
+      <recent name="$PROJECT_DIR$/client/src" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="index.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/server/index.js" working-dir="$PROJECT_DIR$/server">
       <method v="2" />
@@ -84,6 +105,26 @@
       <workItem from="1667408770396" duration="625000" />
       <workItem from="1667411652635" duration="4344000" />
       <workItem from="1667459585060" duration="147000" />
+      <workItem from="1667460037004" duration="4286000" />
+      <workItem from="1667464725261" duration="2501000" />
+      <workItem from="1667468170634" duration="5174000" />
+      <workItem from="1667476096303" duration="2000" />
+      <workItem from="1667479176564" duration="11502000" />
+      <workItem from="1667547394471" duration="3957000" />
+      <workItem from="1667554124042" duration="2227000" />
+      <workItem from="1667560421670" duration="1633000" />
+      <workItem from="1667663185202" duration="129000" />
+      <workItem from="1667663357127" duration="10000" />
+      <workItem from="1667674373881" duration="3372000" />
+      <workItem from="1667728845623" duration="1273000" />
+      <workItem from="1667734088977" duration="517000" />
+      <workItem from="1667736454080" duration="1535000" />
+      <workItem from="1667738042625" duration="4814000" />
+      <workItem from="1667753922589" duration="8583000" />
+      <workItem from="1667767211098" duration="360000" />
+      <workItem from="1667838098960" duration="2000" />
+      <workItem from="1667842738751" duration="3856000" />
+      <workItem from="1667847881595" duration="1162000" />
     </task>
     <servers />
   </component>

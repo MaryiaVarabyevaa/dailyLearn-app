@@ -3,10 +3,13 @@ import {createTheme} from "@mui/material/styles";
 import {Box, Button, Container, CssBaseline, Grid, ThemeProvider, Typography} from "@mui/material";
 import {CardForm} from "./cardForm";
 import {Carousel} from "./carousel/Сarousel";
+import {data} from "./data";
+import {useSelector} from "react-redux";
+import {cardReducer} from "../../store/CardReducer";
 
 const theme = createTheme();
+
 export const Card = () => {
-  const [showTranslate, setShowTranslate] = useState(false);
   const [showForm, setShowForm] = useState(false);
   return (
     <ThemeProvider theme={theme}>
@@ -28,26 +31,7 @@ export const Card = () => {
             Train your words
           </Typography>
             <Carousel />
-          <Button
-            onClick={() => setShowTranslate(!showTranslate)}
-          >
-            {
-              showTranslate? 'Hide translation' : 'Show translation'
-            }
-          </Button>
-          {
-            showTranslate && <Typography
-              component='h3'
-              variant='h3'
-              sx={{
-                padding: 3,
-                bgcolor: 'warning.light',
-                borderRadius: '10px'
-            }}
-            >
-              Origin word
-            </Typography>
-          }
+
           <Button
             onClick={() => setShowForm(!showForm)}
           >

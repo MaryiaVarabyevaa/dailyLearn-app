@@ -4,6 +4,7 @@ export const useValidation = (value, validations) => {
     const [isEmpty, setIsEmpty] = useState(true);
     const [minLengthError, setMinLengthError] = useState(false);
     const [isEmail, setIsEmail] = useState(false);
+    const [hasNumber, setHasNumber] = useState(false);
     useEffect(() => {
         for(let validation in validations) {
             switch (validation) {
@@ -19,12 +20,17 @@ export const useValidation = (value, validations) => {
                         /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
                     re.test(String(value).toLowerCase()) ? setIsEmail(false) : setIsEmail(true);
                     break;
+                case 'hasNumber':
+                    const reg = /\d/;
+                    reg.test(value) ? setHasNumber(true) : setHasNumber(false);
+                    break
             }
         }
     }, [value])
     return {
         isEmpty,
         minLengthError,
-        isEmail
+        isEmail,
+        hasNumber
     }
 };

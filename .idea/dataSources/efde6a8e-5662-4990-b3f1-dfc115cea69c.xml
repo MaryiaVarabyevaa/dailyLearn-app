@@ -3,9 +3,17 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.43">
     <root id="1">
       <DateStyle>mdy</DateStyle>
-      <IntrospectionStateNumber>1574</IntrospectionStateNumber>
+      <Grants>1||-9223372036854775808|c|G
+1||10|c|G
+1||10|C|G
+1||10|T|G
+4||-9223372036854775808|c|G
+4||10|c|G
+4||10|C|G
+4||10|T|G</Grants>
+      <IntrospectionStateNumber>1853</IntrospectionStateNumber>
       <ServerVersion>15.0</ServerVersion>
-      <StartupTime>1667364250</StartupTime>
+      <StartupTime>1667547365</StartupTime>
       <TimeZones>true ACDT
 true ACSST
 false ACST
@@ -817,10 +825,10 @@ false Zulu
 13449||10|C|G
 13449||-9223372036854775808|U|G
 13449||10|U|G</Grants>
-      <IntrospectionStateNumber>1574</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1853</IntrospectionStateNumber>
       <ObjectId>16399</ObjectId>
-      <Relations>sequence|table|19576|19577|1
-sequence|table|19585|19586|1
+      <Relations>sequence|table|20595|20596|1
+sequence|table|20604|20605|1
 </Relations>
       <OwnerName>postgres</OwnerName>
     </database>
@@ -9255,7 +9263,7 @@ sequence|table|19585|19586|1
     <schema id="508" parent="4" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>1574</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1853</IntrospectionStateNumber>
       <ObjectId>2200</ObjectId>
       <StateNumber>518</StateNumber>
       <OwnerName>pg_database_owner</OwnerName>
@@ -77816,25 +77824,25 @@ sequence|table|19585|19586|1
     </view>
     <sequence id="6209" parent="508" name="user_words_id_seq">
       <DataType>integer|0s</DataType>
-      <ObjectId>19585</ObjectId>
-      <StateNumber>1570</StateNumber>
+      <ObjectId>20604</ObjectId>
+      <StateNumber>1850</StateNumber>
       <OwnerName>postgres</OwnerName>
     </sequence>
     <sequence id="6210" parent="508" name="users_id_seq">
       <DataType>integer|0s</DataType>
-      <ObjectId>19576</ObjectId>
-      <StateNumber>1569</StateNumber>
+      <ObjectId>20595</ObjectId>
+      <StateNumber>1849</StateNumber>
       <OwnerName>postgres</OwnerName>
     </sequence>
     <table id="6211" parent="508" name="user_words">
-      <ObjectId>19586</ObjectId>
-      <StateNumber>1570</StateNumber>
+      <ObjectId>20605</ObjectId>
+      <StateNumber>1850</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
     <table id="6212" parent="508" name="users">
-      <ObjectId>19577</ObjectId>
-      <StateNumber>1570</StateNumber>
+      <ObjectId>20596</ObjectId>
+      <StateNumber>1850</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
@@ -97580,118 +97588,118 @@ umserver</ColNames>
       <DefaultExpression>nextval(&apos;user_words_id_seq&apos;::regclass)</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <StateNumber>1570</StateNumber>
+      <StateNumber>1850</StateNumber>
       <TypeId>23</TypeId>
     </column>
     <column id="10137" parent="6211" name="original_word">
       <DataType>varchar(50)|0s</DataType>
       <Position>2</Position>
-      <StateNumber>1570</StateNumber>
+      <StateNumber>1850</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="10138" parent="6211" name="translated_word">
       <DataType>varchar(50)|0s</DataType>
       <Position>3</Position>
-      <StateNumber>1570</StateNumber>
+      <StateNumber>1850</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="10139" parent="6211" name="createdAt">
       <DataType>timestamp with time zone|0s</DataType>
       <NotNull>1</NotNull>
       <Position>4</Position>
-      <StateNumber>1570</StateNumber>
+      <StateNumber>1850</StateNumber>
       <TypeId>1184</TypeId>
     </column>
     <column id="10140" parent="6211" name="updatedAt">
       <DataType>timestamp with time zone|0s</DataType>
       <NotNull>1</NotNull>
       <Position>5</Position>
-      <StateNumber>1570</StateNumber>
+      <StateNumber>1850</StateNumber>
       <TypeId>1184</TypeId>
     </column>
     <column id="10141" parent="6211" name="userId">
       <DataType>integer|0s</DataType>
       <Position>6</Position>
-      <StateNumber>1570</StateNumber>
+      <StateNumber>1850</StateNumber>
       <TypeId>23</TypeId>
     </column>
     <foreign-key id="10142" parent="6211" name="user_words_userId_fkey">
       <ColNames>userId</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>19592</ObjectId>
+      <ObjectId>20611</ObjectId>
       <OnDelete>set-null</OnDelete>
       <OnUpdate>cascade</OnUpdate>
       <RefColNames>id</RefColNames>
       <RefColPositions>1</RefColPositions>
-      <StateNumber>1570</StateNumber>
-      <RefTableId>19577</RefTableId>
+      <StateNumber>1850</StateNumber>
+      <RefTableId>20596</RefTableId>
       <RefTableName>users</RefTableName>
       <RefTableKind>table</RefTableKind>
     </foreign-key>
     <index id="10143" parent="6211" name="user_words_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>19590</ObjectId>
+      <ObjectId>20609</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>1570</StateNumber>
+      <StateNumber>1850</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
     <key id="10144" parent="6211" name="user_words_pkey">
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>19591</ObjectId>
+      <ObjectId>20610</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>1570</StateNumber>
-      <UnderlyingIndexId>19590</UnderlyingIndexId>
+      <StateNumber>1850</StateNumber>
+      <UnderlyingIndexId>20609</UnderlyingIndexId>
     </key>
     <column id="10145" parent="6212" name="id">
       <DataType>integer|0s</DataType>
       <DefaultExpression>nextval(&apos;users_id_seq&apos;::regclass)</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <StateNumber>1569</StateNumber>
+      <StateNumber>1849</StateNumber>
       <TypeId>23</TypeId>
     </column>
     <column id="10146" parent="6212" name="email">
       <DataType>varchar(50)|0s</DataType>
       <Position>2</Position>
-      <StateNumber>1569</StateNumber>
+      <StateNumber>1849</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="10147" parent="6212" name="password">
       <DataType>varchar(255)|0s</DataType>
       <Position>3</Position>
-      <StateNumber>1569</StateNumber>
+      <StateNumber>1849</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="10148" parent="6212" name="createdAt">
       <DataType>timestamp with time zone|0s</DataType>
       <NotNull>1</NotNull>
       <Position>4</Position>
-      <StateNumber>1569</StateNumber>
+      <StateNumber>1849</StateNumber>
       <TypeId>1184</TypeId>
     </column>
     <column id="10149" parent="6212" name="updatedAt">
       <DataType>timestamp with time zone|0s</DataType>
       <NotNull>1</NotNull>
       <Position>5</Position>
-      <StateNumber>1569</StateNumber>
+      <StateNumber>1849</StateNumber>
       <TypeId>1184</TypeId>
     </column>
     <index id="10150" parent="6212" name="users_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>19581</ObjectId>
+      <ObjectId>20600</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>1569</StateNumber>
+      <StateNumber>1849</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
     <index id="10151" parent="6212" name="users_email_key">
       <ColNames>email</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>19583</ObjectId>
-      <StateNumber>1569</StateNumber>
+      <ObjectId>20602</ObjectId>
+      <StateNumber>1849</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
       <CollationNames>default</CollationNames>
@@ -97700,16 +97708,16 @@ umserver</ColNames>
     </index>
     <key id="10152" parent="6212" name="users_pkey">
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>19582</ObjectId>
+      <ObjectId>20601</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>1569</StateNumber>
-      <UnderlyingIndexId>19581</UnderlyingIndexId>
+      <StateNumber>1849</StateNumber>
+      <UnderlyingIndexId>20600</UnderlyingIndexId>
     </key>
     <key id="10153" parent="6212" name="users_email_key">
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>19584</ObjectId>
-      <StateNumber>1569</StateNumber>
-      <UnderlyingIndexId>19583</UnderlyingIndexId>
+      <ObjectId>20603</ObjectId>
+      <StateNumber>1849</StateNumber>
+      <UnderlyingIndexId>20602</UnderlyingIndexId>
     </key>
   </database-model>
 </dataSource>
