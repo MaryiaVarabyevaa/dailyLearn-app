@@ -11,19 +11,21 @@ const CORRECT_VALUE = 'This field should not contain numbers';
 
 export const CardForm = () => {
     const dispatch = useDispatch();
+    // const [valueOfOriginalWord, setValueOFOriginalWord] = useState('');
+    //
     const originalWord = useInput('', {isEmpty: true, hasNumber: true});
     const translatedWord = useInput('',  {isEmpty: true, hasNumber: true});
 
     const handleSubmit = async (e) => {
-        e.preventDefault()
         try {
-            // let data;
-            //
-            // if(!originalWord.isEmpty && !translatedWord.isEmpty){
-            //     dispatch(addWordAction(data));
-            // }
-            // const res = await addWords(originalWord, translatedWord);
-            // console.log(res)
+            e.preventDefault();
+            let data  = await addWords(originalWord.value, translatedWord.value);
+            console.log(data)
+
+            if(!originalWord.isEmpty && !translatedWord.isEmpty && !translatedWord.hasNumber && !originalWord.hasNumber){
+                dispatch(addWordAction(data));
+
+            }
         } catch (err) {
             alert(err.response.data.message)
         }

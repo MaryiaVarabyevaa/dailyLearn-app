@@ -1,19 +1,19 @@
 const Router = require('express');
 const router = new Router();
 const cardController = require('../controllers/cardController');
-const validation = require('./validation');
+const validation = require('./cardValidation');
 const bodyParser = require("body-parser");
-const {check} = require("express-validator");
 
 const urlEncodeParser = bodyParser.urlencoded({
     extended: false,
 });
 
 // todo: finish backend validation
-router.post('/add',
+router.post('/',
     urlEncodeParser,
     validation,
     cardController.create);
+
 router.get('/', cardController.getAll);
 // router.get('/', cardController.check);
 

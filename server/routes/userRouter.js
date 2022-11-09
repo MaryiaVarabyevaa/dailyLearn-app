@@ -1,10 +1,9 @@
 const Router = require('express');
 const router = new Router();
 const bodyParser = require('body-parser');
-const {check} = require('express-validator');
 const userController = require('../controllers/userController');
 const authMiddleware = require('../middleware/authMiddleware');
-const validation = require('./validation');
+const validation = require('./userValidation');
 
 const urlEncodeParser = bodyParser.urlencoded({
     extended: false,
