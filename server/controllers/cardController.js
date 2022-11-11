@@ -9,7 +9,7 @@ class CardController {
             return res.status(422).jsonp(errors.array());
         }
         const {original_word, translated_word} = req.body;
-        const word = await User_words.create({original_word, translated_word});
+        const word = await User_words.create({userId: req.user.id, original_word, translated_word});
         return res.json(word);
     }
     async getAll(req, res) {

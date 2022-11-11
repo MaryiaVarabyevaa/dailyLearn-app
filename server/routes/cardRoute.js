@@ -3,6 +3,7 @@ const router = new Router();
 const cardController = require('../controllers/cardController');
 const validation = require('./cardValidation');
 const bodyParser = require("body-parser");
+const authMiddleware = require("../middleware/authMiddleware");
 
 const urlEncodeParser = bodyParser.urlencoded({
     extended: false,
@@ -11,6 +12,7 @@ const urlEncodeParser = bodyParser.urlencoded({
 // todo: finish backend validation
 router.post('/',
     urlEncodeParser,
+    authMiddleware,
     validation,
     cardController.create);
 

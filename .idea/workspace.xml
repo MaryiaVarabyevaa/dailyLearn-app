@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="335a3f35-4b2d-43ec-a971-f19b57459476" name="Changes" comment="">
+    <list default="true" id="7f23ad4e-d5c5-433d-a998-e46d2e826bca" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/http/CardAPI.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/http/CardAPI.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/auth/Auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/auth/Auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/card/cardForm/CardForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/card/cardForm/CardForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/cardController.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/cardController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/cardRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/cardRoute.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/userRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/userRouter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/validation.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/userValidation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,118 +18,34 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
-  </component>
-  <component name="ProjectId" id="2Gu5J4p4ZMeiI3PIgKi5FtPbxaa" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="1" id="Add" />
-  </component>
+  <component name="ProjectId" id="2HOmC6ahCi0RdOo1hS8ovPDmlmu" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/varabyovamaryia/WebstormProjects/dailyLearn-app/client/src/pages/auth&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/client/src/pages/auth" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/client/src/hooks" />
-      <recent name="$PROJECT_DIR$/client/src/constants" />
-      <recent name="$PROJECT_DIR$/client/src/http" />
-      <recent name="$PROJECT_DIR$/client/src" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Node.js.cardRoute.js">
-    <configuration name="Debug" type="JavascriptDebugType" uri="http://localhost:3000/">
-      <method v="2" />
-    </configuration>
-    <configuration name="UserReducer.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="UserReducer.js" working-dir="$PROJECT_DIR$/client/src/store">
-      <method v="2" />
-    </configuration>
-    <configuration name="cardRoute.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="cardRoute.js" working-dir="$PROJECT_DIR$/server/routes">
-      <method v="2" />
-    </configuration>
-    <configuration name="index.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="index.js" working-dir="$PROJECT_DIR$/server">
-      <method v="2" />
-    </configuration>
-    <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/client/package.json" />
-      <command value="start" />
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <list>
-      <item itemvalue="JavaScript Debug.Debug" />
-      <item itemvalue="Node.js.cardRoute.js" />
-      <item itemvalue="Node.js.UserReducer.js" />
-      <item itemvalue="Node.js.index.js" />
-      <item itemvalue="npm.start" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Node.js.index.js" />
-        <item itemvalue="Node.js.UserReducer.js" />
-      </list>
-    </recent_temporary>
-  </component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="335a3f35-4b2d-43ec-a971-f19b57459476" name="Changes" comment="" />
-      <created>1667225552768</created>
+      <changelist id="7f23ad4e-d5c5-433d-a998-e46d2e826bca" name="Changes" comment="" />
+      <created>1668164373442</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1667225552768</updated>
-      <workItem from="1667225554737" duration="68000" />
-      <workItem from="1667225734337" duration="2336000" />
-      <workItem from="1667238833385" duration="7318000" />
-      <workItem from="1667293569000" duration="16620000" />
-      <workItem from="1667378105178" duration="5422000" />
-      <workItem from="1667408770396" duration="625000" />
-      <workItem from="1667411652635" duration="4344000" />
-      <workItem from="1667459585060" duration="147000" />
-      <workItem from="1667460037004" duration="4286000" />
-      <workItem from="1667464725261" duration="2501000" />
-      <workItem from="1667468170634" duration="5174000" />
-      <workItem from="1667476096303" duration="2000" />
-      <workItem from="1667479176564" duration="11502000" />
-      <workItem from="1667547394471" duration="3957000" />
-      <workItem from="1667554124042" duration="2227000" />
-      <workItem from="1667560421670" duration="1633000" />
-      <workItem from="1667663185202" duration="129000" />
-      <workItem from="1667663357127" duration="10000" />
-      <workItem from="1667674373881" duration="3372000" />
-      <workItem from="1667728845623" duration="1273000" />
-      <workItem from="1667734088977" duration="517000" />
-      <workItem from="1667736454080" duration="1535000" />
-      <workItem from="1667738042625" duration="4814000" />
-      <workItem from="1667753922589" duration="8583000" />
-      <workItem from="1667767211098" duration="360000" />
-      <workItem from="1667838098960" duration="2000" />
-      <workItem from="1667842738751" duration="3856000" />
-      <workItem from="1667847881595" duration="1162000" />
-      <workItem from="1667914633188" duration="6392000" />
-      <workItem from="1667929925755" duration="603000" />
-      <workItem from="1667946019270" duration="1900000" />
-      <workItem from="1667979310729" duration="6847000" />
+      <updated>1668164373442</updated>
+      <workItem from="1668164374650" duration="592000" />
     </task>
     <servers />
   </component>
@@ -150,20 +62,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/server/controllers/cardController.js</url>
-          <line>4</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-      </breakpoints>
-      <default-breakpoints>
-        <breakpoint enabled="true" type="javascript-exception" />
-      </default-breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
