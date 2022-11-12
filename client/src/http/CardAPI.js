@@ -2,7 +2,6 @@ import { $host, $authHost } from './service/index';
 
 export const addWords = async (original_word, translated_word) => {
     const {data} = await $authHost.post('api/card', {original_word, translated_word });
-    console.log(data);
     return {data};
 }
 

@@ -19,12 +19,11 @@ export const CardForm = () => {
     const handleSubmit = async (e) => {
         try {
             e.preventDefault();
-            let data  = await addWords(originalWord.value, translatedWord.value);
-            console.log(data)
-
             if(!originalWord.isEmpty && !translatedWord.isEmpty && !translatedWord.hasNumber && !originalWord.hasNumber){
-                dispatch(addWordAction(data));
-
+                let data  = await addWords(originalWord.value, translatedWord.value);
+                // dispatch(addWordAction(data));
+                originalWord.onSubmit();
+                translatedWord.onSubmit();
             }
         } catch (err) {
             alert(err.response.data.message)

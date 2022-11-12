@@ -11,10 +11,15 @@ export const useInput = (initialValue, validations) => {
     const onBlur = () => {
         setIsClicked(true);
     };
+    const onSubmit = () => {
+        setValue('');
+        setIsClicked(false);
+    }
     return {
         value,
         onChange,
         onBlur,
+        onSubmit,
         isClicked,
         ...valid
     }
