@@ -12,7 +12,7 @@ import {addUserAction} from "../../store/UserReducer";
 const REQUIRED_FIELD = 'Required to fill in';
 
 export const Auth = () => {
-  const isAuth =  useSelector(state => state.userReducer.isAuth);
+  const isAuth =  useSelector(state => state.isAuth);
   const dispatch = useDispatch()
   const [user, setUser] = useState(true);
   const email = useInput('', {isEmpty: true, isEmail: true});
@@ -32,7 +32,7 @@ export const Auth = () => {
             }
             if(!email.isEmpty && !email.isEmail && !password.minLengthError){
                 navigate(CARD_ROUTE);
-                dispatch(addUserAction(data));
+                dispatch(addUserAction());
             }
         } catch(err) {
             alert(err.response.data.message)

@@ -1,35 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="48f09c1b-7309-4f06-a0e3-d3c0b13bb00c" name="Changes" comment="">
+    <list default="true" id="12929764-db50-4a5b-8c09-b31d27fb9fc5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/80220f63-2a31-4943-b9e3-62e70ef9a3e0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/80220f63-2a31-4943-b9e3-62e70ef9a3e0/storage_v2/_src_/database/dailyLearn-app._4hn3Q.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/80220f63-2a31-4943-b9e3-62e70ef9a3e0/storage_v2/_src_/database/dailyLearn-app._4hn3Q/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/80220f63-2a31-4943-b9e3-62e70ef9a3e0/storage_v2/_src_/database/dailyLearn-app._4hn3Q/schema/information_schema.FNRwLQ.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/80220f63-2a31-4943-b9e3-62e70ef9a3e0/storage_v2/_src_/database/dailyLearn-app._4hn3Q/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/80220f63-2a31-4943-b9e3-62e70ef9a3e0/storage_v2/_src_/database/dailyLearn-app._4hn3Q/schema/pg_catalog.0S1ZNQ.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/80220f63-2a31-4943-b9e3-62e70ef9a3e0/storage_v2/_src_/database/dailyLearn-app._4hn3Q/schema/public.abK9xQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/80220f63-2a31-4943-b9e3-62e70ef9a3e0/storage_v2/_src_/database/postgres.edMnLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/80220f63-2a31-4943-b9e3-62e70ef9a3e0/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/80220f63-2a31-4943-b9e3-62e70ef9a3e0/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/80220f63-2a31-4943-b9e3-62e70ef9a3e0/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/efde6a8e-5662-4990-b3f1-dfc115cea69c.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/efde6a8e-5662-4990-b3f1-dfc115cea69c/storage_v2/_src_/database/dailyLearn-app._4hn3Q.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/efde6a8e-5662-4990-b3f1-dfc115cea69c/storage_v2/_src_/database/dailyLearn-app._4hn3Q/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/efde6a8e-5662-4990-b3f1-dfc115cea69c/storage_v2/_src_/database/dailyLearn-app._4hn3Q/schema/information_schema.FNRwLQ.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/efde6a8e-5662-4990-b3f1-dfc115cea69c/storage_v2/_src_/database/dailyLearn-app._4hn3Q/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/efde6a8e-5662-4990-b3f1-dfc115cea69c/storage_v2/_src_/database/dailyLearn-app._4hn3Q/schema/pg_catalog.0S1ZNQ.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/efde6a8e-5662-4990-b3f1-dfc115cea69c/storage_v2/_src_/database/dailyLearn-app._4hn3Q/schema/public.abK9xQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/efde6a8e-5662-4990-b3f1-dfc115cea69c/storage_v2/_src_/database/postgres.edMnLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/efde6a8e-5662-4990-b3f1-dfc115cea69c/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/efde6a8e-5662-4990-b3f1-dfc115cea69c/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/efde6a8e-5662-4990-b3f1-dfc115cea69c/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/be706a26-7f79-403e-8f76-f2e6bf412bb6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/be706a26-7f79-403e-8f76-f2e6bf412bb6/storage_v2/_src_/database/dailyLearn-app._4hn3Q.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/be706a26-7f79-403e-8f76-f2e6bf412bb6/storage_v2/_src_/database/dailyLearn-app._4hn3Q/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/be706a26-7f79-403e-8f76-f2e6bf412bb6/storage_v2/_src_/database/dailyLearn-app._4hn3Q/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/be706a26-7f79-403e-8f76-f2e6bf412bb6/storage_v2/_src_/database/dailyLearn-app._4hn3Q/schema/public.abK9xQ.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/http/CardAPI.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/http/CardAPI.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/card/cardForm/CardForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/card/cardForm/CardForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/AppRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/AppRouter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/auth/Auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/auth/Auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/store/CardReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/store/CardReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/store/UserReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/store/UserReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/controllers/userController.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/userController.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,11 +28,17 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2HRHiQvANbKFEv6z1M1isXPwVP4" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="2HRkioFz8mjLMc1hU14AcWV3R6o" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -62,31 +57,37 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="Node.js.debug">
-    <configuration name="debug" type="JavascriptDebugType" uri="http://localhost:3000">
+  <component name="RunManager" selected="npm.dev">
+    <configuration name="index.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="index.js" working-dir="$PROJECT_DIR$/../dailyLearn-app-sec/server">
+      <log_file alias="word" path="$PROJECT_DIR$/../dailyLearn-app-sec/server/controllers/cardController.js" />
       <method v="2" />
     </configuration>
-    <configuration name="debug" type="NodeJSConfigurationType" path-to-js-file="index.js" working-dir="$PROJECT_DIR$/../dailyLearn-app/server">
-      <EXTENSION ID="com.jetbrains.nodejs.run.NodeStartBrowserRunConfigurationExtension">
-        <browser start="true" url="http://localhost:3000" />
-      </EXTENSION>
+    <configuration name="dev" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/server/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <package-manager value="/usr/local/bin/npm" />
+      <envs />
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="JavaScript Debug.debug" />
-      <item itemvalue="Node.js.debug" />
+      <item itemvalue="Node.js.index.js" />
+      <item itemvalue="npm.dev" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="48f09c1b-7309-4f06-a0e3-d3c0b13bb00c" name="Changes" comment="" />
-      <created>1668241102956</created>
+      <changelist id="12929764-db50-4a5b-8c09-b31d27fb9fc5" name="Changes" comment="" />
+      <created>1668255412608</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1668241102956</updated>
-      <workItem from="1668241106391" duration="4629000" />
-      <workItem from="1668253747006" duration="311000" />
+      <updated>1668255412608</updated>
+      <workItem from="1668255413703" duration="6013000" />
+      <workItem from="1668323473009" duration="5580000" />
     </task>
     <servers />
   </component>
@@ -108,39 +109,10 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/client/src/http/CardAPI.js</url>
-          <line>3</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/client/src/pages/card/cardForm/CardForm.js</url>
-          <line>21</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/server/routes/index.js</url>
-          <line>6</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/server/routes/cardRoute.js</url>
-          <line>16</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/server/routes/cardRoute.js</url>
-          <line>14</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/server/routes/cardRoute.js</url>
-          <line>12</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/server/index.js</url>
-          <line>13</line>
-          <option name="timeStamp" value="18" />
+          <url>file://$PROJECT_DIR$/server/controllers/cardController.js</url>
+          <line>11</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

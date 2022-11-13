@@ -6,7 +6,7 @@ import {Card} from "../pages/card";
 import {Auth} from "../pages/auth";
 
 export const AppRouter = () => {
-  const isAuth = useSelector(state => state.userReducer.isAuth);
+  const isAuth = useSelector(state => state.isAuth);
   return <Routes>
     {
       isAuth && <Route path={CARD_ROUTE} element={<Card />}/>

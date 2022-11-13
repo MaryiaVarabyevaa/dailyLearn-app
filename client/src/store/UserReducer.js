@@ -1,20 +1,28 @@
-const ADD_USER = 'ADD_USER'
+const ADD_USER = 'ADD_USER';
+const RESTORE_FROM_STORAGE = 'RESTORE_FROM_STORAGE'
 const defaultState = {
-  isAuth: true,
-  user: [],
+  isAuth: true
 }
 
 export const userReducer = (state = defaultState, action) => {
   switch (action.type) {
     case ADD_USER:
-      return {...state, isAuth: true, user: [...state.user, action.payload]};
+      localStorage.setItem('isAuth', 'true');
+      return {...state, isAuth: true};
+    case RESTORE_FROM_STORAGE:
+      const isAuthUser = !!localStorage.getItem('isAuth');
+      return {...state, isAuth: isAuthUser? isAuthUser : false};
     default:
       return state;
   }
 }
-export const addUserAction = (payload) => {
+export const addUserAction = () => {
   return {
     type: ADD_USER,
-    payload
+  }
+}
+export const restoreFromStorageAction = () => {
+  return {
+    type: RESTORE_FROM_STORAGE,
   }
 }

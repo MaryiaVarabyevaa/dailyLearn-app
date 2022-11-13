@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal" created-in="WS-222.4345.14">
-    <data-source name="dailyLearn-app@localhost" uuid="be706a26-7f79-403e-8f76-f2e6bf412bb6">
+    <data-source name="postgresql" uuid="2fa43ae2-5b13-45b1-b277-646dc3ebe2f9">
       <database-info product="PostgreSQL" version="15.0" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.5.0" dbms="POSTGRES" exact-version="15.0" exact-driver-version="42.5">
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
@@ -10,9 +10,7 @@
       <user-name>postgres</user-name>
       <schema-mapping>
         <introspection-scope>
-          <node kind="database">
-            <name qname="@" />
-            <name qname="dailyLearn-app" />
+          <node kind="database" qname="dailyLearn-app">
             <node kind="schema" qname="@" />
           </node>
         </introspection-scope>
